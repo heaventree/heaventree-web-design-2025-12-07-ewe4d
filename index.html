@@ -23,6 +23,30 @@
     .shadow-soft {
       box-shadow: 0 10px 40px rgba(0,0,0,0.10);
     }
+    @keyframes gradient-shift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .gradient-animated {
+      background: linear-gradient(-45deg, #5B4BFF, #00E5A8, #5B4BFF, #00E5A8);
+      background-size: 300% 300%;
+      animation: gradient-shift 6s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .animate-gradient-shift {
+      background: linear-gradient(-45deg, #5B4BFF, #00E5A8, #5B4BFF, #00E5A8);
+      background-size: 300% 300%;
+      animation: gradient-shift 8s ease infinite;
+    }
   </style>
 </head>
 <body class="bg-white text-slate-900 antialiased scroll-smooth">
@@ -56,7 +80,7 @@
 
         <!-- Desktop CTA -->
         <div class="hidden md:flex items-center gap-4">
-          <a href="https://marketplace.heaventree.ie" class="inline-flex items-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm font-medium px-6 py-2.5 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-white">
+          <a href="https://marketplace.heaventree.ie" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--primary)] text-white text-sm font-medium px-6 py-2.5 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-white animate-gradient-shift">
             <span>Browse Templates</span>
             <!-- Arrow Right Icon -->
             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -109,7 +133,7 @@
               <div class="space-y-4">
                 <h1 class="font-display font-bold tracking-tight text-slate-900 text-4xl sm:text-5xl lg:text-6xl leading-tight">
                   Amazing Websites,
-                  <span class="block text-[var(--primary)]">No Upfront Costs</span>
+                  <span class="block gradient-animated">No Upfront Costs</span>
                 </h1>
                 <p class="text-base sm:text-lg font-light text-slate-600 max-w-xl">
                   Launch a high-converting, modern website in hours—not months. With heaventree Web design, you choose from 320+ industry-ready templates, we handle the setup, and you pay a simple, predictable monthly plan.

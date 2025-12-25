@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Maintenance | heaventree Web design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website Maintenance">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #5B4BFF;
+      --secondary: #EEF0FF;
+      --accent: #00E5A8;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .font-display {
+      font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .shadow-soft {
+      box-shadow: 0 10px 40px rgba(0,0,0,0.10);
+    }
+    @keyframes gradient-shift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .gradient-animated {
+      background: linear-gradient(-45deg, #5B4BFF, #00E5A8, #5B4BFF, #00E5A8);
+      background-size: 300% 300%;
+      animation: gradient-shift 6s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .animate-gradient-shift {
+      background: linear-gradient(-45deg, #5B4BFF, #00E5A8, #5B4BFF, #00E5A8);
+      background-size: 300% 300%;
+      animation: gradient-shift 8s ease infinite;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "heaventree Web design",
+    "description": "heaventree Web design helps startups and small businesses launch amazing, conversion-ready websites with no upfront costs.",
+    "email": "info@heaventree.ie",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@heaventree.ie",
+      "contactType": "customer service"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Website Maintenance | heaventree Web design",
+    "description": "Website Maintenance"
+  }
+]
+  </script>
+  </head>
+<body class="bg-white text-slate-900 antialiased scroll-smooth">
+  <div class="min-h-screen flex flex-col bg-gradient-to-b from-white via-[#F7F7FF] to-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2 group">
+          <span class="font-display font-bold text-xl text-[var(--primary)] group-hover:scale-105 transition-transform duration-300">heaventree</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-light">
+          <a href="index.html#features" class="text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Templates</a>
+          <a href="index.html#benefits" class="text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">How It Works</a>
+          <a href="index.html#testimonials" class="text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Results</a>
+          <a href="index.html#about" class="text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">About</a>
+          <a href="index.html#pricing" class="text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Pricing</a>
+          <a href="website-maintenance.html" class="text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Website Maintenance</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          <a href="https://marketplace.heaventree.ie" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--primary)] text-white text-sm font-medium px-6 py-2.5 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-white animate-gradient-shift">
+            <span>Browse Templates</span>
+            <!-- Arrow Right Icon -->
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 text-slate-700 hover:text-[var(--primary)] hover:border-[var(--primary)] bg-white shadow-soft hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-white" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden md:hidden border-t border-slate-200 bg-white shadow-soft transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-3 text-sm font-light">
+          <a href="index.html#features" class="py-2 text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Templates</a>
+          <a href="index.html#benefits" class="py-2 text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">How It Works</a>
+          <a href="index.html#testimonials" class="py-2 text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Results</a>
+          <a href="index.html#about" class="py-2 text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">About</a>
+          <a href="index.html#pricing" class="py-2 text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Pricing</a>
+          <a href="website-maintenance.html" class="py-2 text-slate-700 hover:text-[var(--primary)] transition-colors duration-300">Website Maintenance</a>
+          <a href="https://marketplace.heaventree.ie" class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm font-medium px-5 py-2.5 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300">
+            <span>Browse Templates</span>
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="flex-1">
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute -top-32 -right-24 w-80 h-80 bg-[var(--secondary)] rounded-full blur-3xl opacity-70"></div>
+          <div class="absolute bottom-[-6rem] -left-24 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-3xl opacity-80"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="space-y-8">
+              <div class="inline-flex items-center gap-2 rounded-full bg-[var(--secondary)]/80 px-4 py-1.5 shadow-soft border border-[var(--primary)]/10">
+                <!-- Shield Icon -->
+                <svg class="w-4 h-4 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 4.418-2.686 8.418-7 9-4.314-.582-7-4.582-7-9V7l7-4z"/>
+                </svg>
+                <span class="text-xs font-medium uppercase tracking-[0.18em] text-slate-700">Keep Your Website Secure & Fast</span>
+              </div>
+              <div class="space-y-4">
+                <h1 class="font-display font-bold tracking-tight text-slate-900 text-4xl sm:text-5xl lg:text-6xl leading-tight">
+                  Professional Website
+                  <span class="block gradient-animated">Maintenance & Support</span>
+                </h1>
+                <p class="text-base sm:text-lg font-light text-slate-600 max-w-xl">
+                  Your website is a living, breathing asset. heaventree handles all the technical maintenance, security updates, backups, and performance optimization so you can focus on growing your business.
+                </p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
+                <a href="https://marketplace.heaventree.ie" class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm sm:text-base font-medium px-8 py-3 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-white">
+                  <span>Get Started Today</span>
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </a>
+                <button type="button" class="inline-flex items-center justify-center gap-2 rounded-full bg-white text-slate-900 text-sm sm:text-base font-medium px-6 py-3 border border-slate-200 shadow-soft hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-white">
+                  <!-- Play Icon -->
+                  <svg class="w-5 h-5 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 6l10 6-10 6V6z"/>
+                  </svg>
+                  <span>Learn More</span>
+                </button>
+              </div>
+              <div class="grid grid-cols-3 gap-6 max-w-md pt-4 border-t border-slate-200">
+                <div class="space-y-1">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-2xl font-display font-bold text-slate-900">24/7</span>
+                  </div>
+                  <p class="text-xs font-light text-slate-500">Monitoring and support available around the clock.</p>
+                </div>
+                <div class="space-y-1">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-2xl font-display font-bold text-slate-900">99.9%</span>
+                  </div>
+                  <p class="text-xs font-light text-slate-500">Uptime guarantee for your website.</p>
+                </div>
+                <div class="space-y-1">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-2xl font-display font-bold text-slate-900">∞</span>
+                  </div>
+                  <p class="text-xs font-light text-slate-500">Updates and improvements included.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="relative">
+              <div class="relative rounded-2xl bg-white shadow-soft border border-slate-100 p-6 sm:p-8 lg:p-10 overflow-hidden">
+                <div class="absolute -top-20 right-0 w-40 h-40 bg-[var(--primary)]/20 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-[-4rem] -left-10 w-36 h-36 bg-[var(--accent)]/20 rounded-full blur-3xl"></div>
+                <div class="relative space-y-6">
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <p class="text-xs font-medium uppercase tracking-[0.18em] text-slate-500">Maintenance Services</p>
+                      <h2 class="mt-1 font-display font-semibold tracking-tight text-lg text-slate-900">Complete Website Care</h2>
+                    </div>
+                    <span class="inline-flex items-center gap-1 rounded-full bg-[var(--secondary)] px-3 py-1 text-[11px] font-medium text-slate-700">
+                      <!-- Shield Icon -->
+                      <svg class="w-3.5 h-3.5 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 4.418-2.686 8.418-7 9-4.314-.582-7-4.582-7-9V7l7-4z"/>
+                      </svg>
+                      <span>Protected</span>
+                    </span>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-xl border border-slate-200 bg-[var(--secondary)]/60 p-3 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                      <div class="flex items-center justify-between">
+                        <p class="text-xs font-medium text-slate-700">Security Updates</p>
+                        <!-- Check Icon -->
+                        <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+                      </div>
+                      <p class="mt-2 text-xs font-light text-slate-600">Regular patches and vulnerability fixes.</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                      <div class="flex items-center justify-between">
+                        <p class="text-xs font-medium text-slate-700">Performance Tuning</p>
+                        <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+                      </div>
+                      <p class="mt-2 text-xs font-light text-slate-600">Optimization for speed and efficiency.</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-white p-3 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                      <div class="flex items-center justify-between">
+                        <p class="text-xs font-medium text-slate-700">Daily Backups</p>
+                        <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+                      </div>
+                      <p class="mt-2 text-xs font-light text-slate-600">Automated backups and disaster recovery.</p>
+                    </div>
+                    <div class="rounded-xl border border-dashed border-[var(--primary)]/40 bg-[var(--secondary)]/40 p-3 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                      <p class="text-xs font-medium text-slate-700">Content Updates</p>
+                      <p class="mt-2 text-xs font-light text-slate-600">Monthly updates and improvements.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs font-light text-slate-500 pt-2 border-t border-slate-100">
+                    <div class="flex items-center gap-1.5">
+                      <!-- Check Icon -->
+                      <svg class="w-3.5 h-3.5 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                      </svg>
+                      <span>Included in all plans</span>
+                    </div>
+                    <span>Peace of mind guaranteed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What's Included -->
+      <section class="py-16 md:py-24 bg-[var(--secondary)]/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14">
+            <div>
+              <p class="text-xs font-medium uppercase tracking-[0.18em] text-[var(--primary)]">Service Features</p>
+              <h2 class="mt-2 font-display font-bold tracking-tight text-3xl sm:text-4xl text-slate-900">
+                Comprehensive Website Maintenance Included
+              </h2>
+              <p class="mt-4 max-w-2xl text-sm sm:text-base font-light text-slate-600">
+                Every heaventree website comes with professional maintenance and support built into your monthly plan. No additional fees, no surprises—just complete peace of mind.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Feature 1 -->
+            <article class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <!-- Lock Icon -->
+                <svg class="w-6 h-6 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l-7 4v5c0 4.418 2.686 8.418 7 9 4.314-.582 7-4.582 7-9V7l-7-4z"/>
+                </svg>
+                <h3 class="font-display font-semibold text-base text-slate-900 tracking-tight">Security & SSL</h3>
+              </div>
+              <p class="text-sm font-light text-slate-600 flex-1">
+                Automatic SSL certificate management, malware scanning, and regular security audits to protect your site and customer data from threats.
+              </p>
+              <p class="mt-4 text-[11px] font-light text-slate-500 border-t border-slate-100 pt-3">Updated daily • Proactive monitoring</p>
+            </article>
+
+            <!-- Feature 2 -->
+            <article class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <!-- Zap Icon -->
+                <svg class="w-6 h-6 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 3L4 14h7l-1 7 9-11h-7l1-7z"/>
+                </svg>
+                <h3 class="font-display font-semibold text-base text-slate-900 tracking-tight">Performance Optimization</h3>
+              </div>
+              <p class="text-sm font-light text-slate-600 flex-1">
+                Continuous monitoring and optimization of page load speeds, image compression, caching strategies, and CDN distribution for peak performance.
+              </p>
+              <p class="mt-4 text-[11px] font-light text-slate-500 border-t border-slate-100 pt-3">Real-time monitoring • Weekly optimization</p>
+            </article>
+
+            <!-- Feature 3 -->
+            <article class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <!-- Database Icon -->
+                <svg class="w-6 h-6 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-4.22 4.125-9.375 4.125S1.5 8.653 1.5 6.375m18.75 0A9.375 9.375 0 0 0 12 2.625c-5.154 0-9.375 1.847-9.375 4.125m18.75 0h-.75a9.375 9.375 0 0 0-9.375 9.375v.75m0 0H3.75a9.375 9.375 0 0 0 9.375 9.375h.75m0 0v-.75A9.375 9.375 0 0 0 3.75 15.75"/>
+                </svg>
+                <h3 class="font-display font-semibold text-base text-slate-900 tracking-tight">Automated Backups</h3>
+              </div>
+              <p class="text-sm font-light text-slate-600 flex-1">
+                Daily automated backups stored in multiple secure locations with one-click restore capability for disaster recovery and peace of mind.
+              </p>
+              <p class="mt-4 text-[11px] font-light text-slate-500 border-t border-slate-100 pt-3">Daily backups • Multiple locations</p>
+            </article>
+
+            <!-- Feature 4 -->
+            <article class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <!-- Update Icon -->
+                <svg class="w-6 h-6 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15"/>
+                </svg>
+                <h3 class="font-display font-semibold text-base text-slate-900 tracking-tight">Software Updates</h3>
+              </div>
+              <p class="text-sm font-light text-slate-600 flex-1">
+                Automatic updates for all plugins, themes, and dependencies with thorough testing to ensure compatibility and stability.
+              </p>
+              <p class="mt-4 text-[11px] font-light text-slate-500 border-t border-slate-100 pt-3">Automatic updates • Tested thoroughly</p>
+            </article>
+
+            <!-- Feature 5 -->
+            <article class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <!-- Support Icon -->
+                <svg class="w-6 h-6 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0zm-5-4a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                </svg>
+                <h3 class="font-display font-semibold text-base text-slate-900 tracking-tight">24/7 Monitoring</h3>
+              </div>
+              <p class="text-sm font-light text-slate-600 flex-1">
+                Round-the-clock monitoring of your website uptime, performance metrics, and error logs with instant alerts for any issues.
+              </p>
+              <p class="mt-4 text-[11px] font-light text-slate-500 border-t border-slate-100 pt-3">Always watching • Instant alerts</p>
+            </article>
+
+            <!-- Feature 6 -->
+            <article class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden flex flex-col p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <!-- Edit Icon -->
+                <svg class="w-6 h-6 text-[var(--primary)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                </svg>
+                <h3 class="font-display font-semibold text-base text-slate-900 tracking-tight">Content Updates</h3>
+              </div>
+              <p class="text-sm font-light text-slate-600 flex-1">
+                Monthly content refreshes, text updates, image changes, and minor enhancements to keep your website current and relevant.
+              </p>
+              <p class="mt-4 text-[11px] font-light text-slate-500 border-t border-slate-100 pt-3">Monthly updates • Always fresh</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+            <p class="text-xs font-medium uppercase tracking-[0.18em] text-[var(--primary)]">Transparent Pricing</p>
+            <h2 class="mt-2 font-display font-bold tracking-tight text-3xl sm:text-4xl text-slate-900">
+              Maintenance Pricing That Scales With You
+            </h2>
+            <p class="mt-4 text-sm sm:text-base font-light text-slate-600">
+              Choose the maintenance plan that fits your website needs. All plans include everything mentioned above—no hidden fees, no surprises.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <!-- Starter Plan -->
+            <div class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.01] transition-all duration-300 p-6 sm:p-8 flex flex-col">
+              <h3 class="font-display font-semibold text-lg text-slate-900 mb-1">Starter</h3>
+              <p class="text-sm font-light text-slate-600 mb-6">
+                Perfect for small websites and blogs with light traffic.
+              </p>
+
+              <div class="flex flex-wrap items-baseline gap-2 mb-6">
+                <span class="text-3xl sm:text-4xl font-display font-bold text-slate-900">€<span>19</span></span>
+                <span class="text-xs font-light text-slate-500">/month</span>
+              </div>
+
+              <ul class="space-y-3 text-sm font-light text-slate-600 mb-8 flex-1">
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Daily automated backups</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Weekly security updates</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Basic performance monitoring</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Email support</span>
+                </li>
+              </ul>
+
+              <a href="https://marketplace.heaventree.ie" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm font-medium px-6 py-3 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300">
+                <span>Choose Starter</span>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="relative rounded-2xl bg-white border border-[var(--primary)]/30 shadow-soft hover:shadow-xl hover:scale-[1.01] transition-all duration-300 p-6 sm:p-8 flex flex-col">
+              <div class="absolute top-4 right-4">
+                <span class="inline-flex items-center gap-1 rounded-full bg-[var(--primary)] text-white text-[10px] font-medium px-3 py-1 shadow-soft">
+                  <svg class="w-3.5 h-3.5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5.25 11.25 3 9 0.75M15 23.25 12.75 21 15 18.75M3 15l2.25-2.25L3 10.5M21 9l-2.25 2.25L21 13.5M12 7.5l1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5 1.5-3z"/>
+                  </svg>
+                  <span>Most Popular</span>
+                </span>
+              </div>
+              <h3 class="font-display font-semibold text-lg text-slate-900 mb-1">Professional</h3>
+              <p class="text-sm font-light text-slate-600 mb-6">
+                Ideal for growing businesses with moderate traffic and regular updates.
+              </p>
+
+              <div class="flex flex-wrap items-baseline gap-2 mb-6">
+                <span class="text-3xl sm:text-4xl font-display font-bold text-slate-900">€<span>49</span></span>
+                <span class="text-xs font-light text-slate-500">/month</span>
+              </div>
+
+              <ul class="space-y-3 text-sm font-light text-slate-600 mb-8 flex-1">
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Everything in Starter, plus:</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Hourly backups</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Advanced security monitoring</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Performance optimization</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Up to 5 content updates/month</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Priority email support</span>
+                </li>
+              </ul>
+
+              <a href="https://marketplace.heaventree.ie" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm font-medium px-6 py-3 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300">
+                <span>Choose Professional</span>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="rounded-2xl bg-white border border-slate-100 shadow-soft hover:shadow-xl hover:scale-[1.01] transition-all duration-300 p-6 sm:p-8 flex flex-col">
+              <h3 class="font-display font-semibold text-lg text-slate-900 mb-1">Enterprise</h3>
+              <p class="text-sm font-light text-slate-600 mb-6">
+                For high-traffic sites and businesses requiring dedicated support.
+              </p>
+
+              <div class="flex flex-wrap items-baseline gap-2 mb-6">
+                <span class="text-3xl sm:text-4xl font-display font-bold text-slate-900">€<span>99</span></span>
+                <span class="text-xs font-light text-slate-500">/month</span>
+              </div>
+
+              <ul class="space-y-3 text-sm font-light text-slate-600 mb-8 flex-1">
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Everything in Professional, plus:</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Real-time backups</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Dedicated account manager</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Unlimited content updates</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Phone & email support</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-0.5">
+                    <svg class="w-4 h-4 text-[var(--accent)]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                  </span>
+                  <span>Custom integrations available</span>
+                </li>
+              </ul>
+
+              <a href="https://marketplace.heaventree.ie" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm font-medium px-6 py-3 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300">
+                <span>Choose Enterprise</span>
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="mt-12 rounded-2xl border border-dashed border-[var(--primary)]/30 bg-[var(--secondary)]/60 p-6 sm:p-8 text-center">
+            <p class="text-sm font-light text-slate-600 max-w-2xl mx-auto">
+              All maintenance plans are included with your heaventree website subscription. There are no separate fees for security, backups, or updates. Have questions about which plan is right for you? <a href="mailto:info@heaventree.ie" class="text-[var(--primary)] font-medium hover:underline">Contact us</a> and we will help you choose.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Maintenance Matters -->
+      <section class="py-16 md:py-24 bg-[var(--secondary)]/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <p class="text-xs font-medium uppercase tracking-[0.18em] text-[var(--primary)]">Why It Matters</p>
+              <h2 class="mt-2 font-display font-bold tracking-tight text-3xl sm:text-4xl text-slate-900">
+                Website Maintenance is Not Optional
+              </h2>
+              <p class="mt-4 text-sm sm:text-base font-light text-slate-600 max-w-2xl">
+                A website is not a "set it and forget it" asset. Like any business tool, it requires regular care to stay secure, fast, and effective. Without proper maintenance, your site becomes vulnerable to attacks, slows down, and loses customers.
+              </p>
+
+              <div class="mt-8 space-y-4">
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-6 w-6 rounded-full bg-[var(--primary)] text-white">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-display font-semibold text-base text-slate-900">Security Threats Evolve Daily</h3>
+                    <p class="mt-1 text-sm font-light text-slate-600">New vulnerabilities are discovered constantly. Regular updates and patches protect your site and customer data from hackers.</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-6 w-6 rounded-full bg-[var(--primary)] text-white">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-display font-semibold text-base text-slate-900">Performance Degrades Over Time</h3>
+                    <p class="mt-1 text-sm font-light text-slate-600">Without optimization, sites slow down as they age. Slow sites lose visitors and hurt your search rankings.</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-6 w-6 rounded-full bg-[var(--primary)] text-white">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-display font-semibold text-base text-slate-900">Content Gets Stale</h3>
+                    <p class="mt-1 text-sm font-light text-slate-600">Outdated information damages trust. Regular content updates keep your site relevant and build credibility.</p>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex items-center justify-center h-6 w-6 rounded-full bg-[var(--primary)] text-white">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-display font-semibold text-base text-slate-900">Downtime Costs Money</h3>
+                    <p class="mt-1 text-sm font-light text-slate-600">Every minute your site is down, you lose potential customers and revenue. Proactive monitoring prevents costly outages.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-white border border-slate-100 shadow-soft p-6 sm:p-8 lg:p-10">
+              <h3 class="font-display font-semibold text-lg text-slate-900 mb-6">The Cost of Neglect</h3>
+              <div class="space-y-4">
+                <div class="rounded-xl border border-red-100 bg-red-50 p-4">
+                  <p class="text-sm font-medium text-red-900 mb-1">Unpatched Vulnerability</p>
+                  <p class="text-xs font-light text-red-700">A single missed security update can lead to data breaches costing thousands in recovery and legal fees.</p>
+                </div>
+                <div class="rounded-xl border border-orange-100 bg-orange-50 p-4">
+                  <p class="text-sm font-medium text-orange-900 mb-1">Slow Website</p>
+                  <p class="text-xs font-light text-orange-700">A 1-second delay in page load time can reduce conversions by 7%. Every second matters.</p>
+                </div>
+                <div class="rounded-xl border border-yellow-100 bg-yellow-50 p-4">
+                  <p class="text-sm font-medium text-yellow-900 mb-1">Broken Links & Outdated Info</p>
+                  <p class="text-xs font-light text-yellow-700">Visitors lose trust when they find dead links or information that no longer applies.</p>
+                </div>
+                <div class="rounded-xl border border-blue-100 bg-blue-50 p-4">
+                  <p class="text-sm font-medium text-blue-900 mb-1">Unexpected Downtime</p>
+                  <p class="text-xs font-light text-blue-700">Without monitoring, you might not know your site is down until customers tell you.</p>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-6 border-t border-slate-100">
+                <p class="text-xs font-light text-slate-500 mb-3">With heaventree maintenance, you avoid all of these problems.</p>
+                <a href="https://marketplace.heaventree.ie" class="inline-flex items-center gap-2 text-[var(--primary)] font-medium hover:underline">
+                  <span>Learn more about our plans</span>
+                  <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="relative py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="relative overflow-hidden rounded-2xl shadow-soft bg-slate-900">
+            <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(13,13,27,0.9)] via-[rgba(13,13,27,0.85)] to-[rgba(13,13,27,0.75)]"></div>
+            <div class="relative px-6 py-10 sm:px-10 sm:py-12 lg:px-16 lg:py-16">
+              <div class="max-w-2xl">
+                <p class="text-xs font-medium uppercase tracking-[0.18em] text-[var(--accent)]">Get Started</p>
+                <h2 class="mt-2 font-display font-bold tracking-tight text-3xl sm:text-4xl text-white">
+                  Let us handle the maintenance. You focus on growth.
+                </h2>
+                <p class="mt-4 text-sm sm:text-base font-light text-slate-200 max-w-xl">
+                  Choose your maintenance plan and rest easy knowing your website is secure, fast, and always up to date. All plans are backed by our expert support team.
+                </p>
+                <div class="mt-6 flex flex-col sm:flex-row gap-4 sm:items-center">
+                  <a href="https://marketplace.heaventree.ie" class="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-white text-sm font-medium px-8 py-3 shadow-soft hover:shadow-xl hover:scale-105 hover:brightness-110 transition-all duration-300">
+                    <span>Browse maintenance plans</span>
+                    <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+                  <a href="mailto:info@heaventree.ie" class="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium px-8 py-3 hover:bg-white/20 transition-all duration-300">
+                    <span>Questions? Contact us</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-200 pt-12 md:pt-16 pb-8 mt-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-10 md:mb-12">
+          <!-- Brand -->
+          <div>
+            <a href="index.html" class="flex items-center gap-2 mb-4">
+              <span class="font-display font-bold text-xl text-white">heaventree</span>
+            </a>
+            <p class="text-xs font-light text-slate-400 max-w-xs">
+              Modern, high‑performing websites with no upfront cost. Choose from 320+ templates and launch in hours on a simple monthly plan.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div>
+            <h3 class="font-display font-semibold text-sm text-white mb-3">Company</h3>
+            <ul class="space-y-2 text-xs font-light text-slate-400">
+              <li>
+                <a href="privacy.html" class="hover:text-[var(--accent)] transition-colors duration-300">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="terms.html" class="hover:text-[var(--accent)] transition-colors duration-300">Terms of Service</a>
+              </li>
+              <li>
+                <a href="blog.html" class="hover:text-[var(--accent)] transition-colors duration-300">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="font-display font-semibold text-sm text-white mb-3">Contact</h3>
+            <ul class="space-y-2 text-xs font-light text-slate-400">
+              <li>Email: <a href="mailto:info@heaventree.ie" class="hover:text-[var(--accent)] transition-colors duration-300">info@heaventree.ie</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <h3 class="font-display font-semibold text-sm text-white mb-3">Follow</h3>
+            <div class="flex items-center gap-3">
+              <a href="#" aria-label="Twitter" class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 hover:text-[var(--accent)] hover:border-[var(--accent)] hover:scale-105 transition-all duration-300">
+                <i class="fab fa-twitter text-sm"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 hover:text-[var(--accent)] hover:border-[var(--accent)] hover:scale-105 transition-all duration-300">
+                <i class="fab fa-linkedin-in text-sm"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="w-8 h-8 rounded-full border border-slate-700 flex items-center justify-center text-slate-300 hover:text-[var(--accent)] hover:border-[var(--accent)] hover:scale-105 transition-all duration-300">
+                <i class="fab fa-instagram text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p class="text-[11px] font-light text-slate-500">© 2025 heaventree Web design. All rights reserved.</p>
+          <p class="text-[11px] font-light text-slate-500">Designed for modern, fast‑moving businesses.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          const icon = mobileMenuButton.querySelector('i');
+          if (icon) {
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+          }
+        });
+
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      }
+
+      // Smooth Scroll for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#' && href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
